@@ -21,11 +21,7 @@ int main(){
                 int sum = arr[i][j];
                 //i-k j-k i+k j+k // i-k j+k i+k j-k
                 for(int k = 1; ;k++){
-                    if(i-k >= 0 && j-k >= 0){
-                        sum += arr[i-k][j-k];
-                    }if(i+k < n && j+k < m){
-                        sum += arr[i+k][j+k];
-                    }if(i-k >= 0 && j+k < m){
+                    if(i-k >= 0 && j+k < m){
                         sum += arr[i-k][j+k];
                     }if(i+k < n && j-k >= 0){
                         sum += arr[i+k][j-k];
